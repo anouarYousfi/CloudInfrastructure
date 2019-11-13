@@ -82,7 +82,7 @@ public class CloudInfrastructureTest {
      * in the cloud. Each VM can have three possible statuses : Inactive, Running or Stopped. A new
      * VM is always Inactive at its creation. We can then start or stop it.
      */
-   /* @Test
+   @Test
     public void create_machines() {
         // create a new machine takes 4 parameters : name, operating system, disk size, memory.
         cloud.createMachine("machine1", "Linux", "50gb", "8gb");

@@ -1,4 +1,18 @@
 package ma.sqli.tests.cloudinfrastructure.machinestates;
 
-public class InactiveState {
+import ma.sqli.tests.cloudinfrastructure.Machine;
+import ma.sqli.tests.cloudinfrastructure.MachineState;
+
+public class InactiveState implements MachineState {
+
+
+    @Override
+    public void stop(Machine machine) {
+
+    }
+
+    @Override
+    public void run(Machine machine) {
+        machine.setMachineState(new RunningState());
+    }
 }

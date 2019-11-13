@@ -48,4 +48,17 @@ public class CloudInfrastructure {
 
         machines.put(machineName, new Machine(machineName, operatingSystem, diskSize, memory));
     }
+
+    public void startMachine(String machineName) {
+       machines.get(machineName).getMachineState().run(machines.get(machineName));
+
+    }
+
+    public void stopMachine(String machineName) {
+        machines.get(machineName).getMachineState().stop(machines.get(machineName));
+    }
+
+    public String listMachines() {
+      return machines.values().stream().map(Machine::toString).collect(Collectors.joining("||"));
+    }
 }

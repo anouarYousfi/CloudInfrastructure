@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d2c142b-2e9d-440f-8bb2-1b2dac89e388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/CloudInfrastructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/CloudInfrastructure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/Machine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/Machine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/test/ma/sqli/tests/cloudinfrastructure/CloudInfrastructureTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/ma/sqli/tests/cloudinfrastructure/CloudInfrastructureTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/CloudInfrastructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/CloudInfrastructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/MachineState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/MachineState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/InactiveState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/InactiveState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/RunningState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/RunningState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/StoppedState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/StoppedState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ma/sqli/tests/cloudinfrastructure/CloudInfrastructureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ma/sqli/tests/cloudinfrastructure/CloudInfrastructureTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -82,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573483204932</updated>
       <workItem from="1573483208809" duration="2068000" />
-      <workItem from="1573513858056" duration="18020000" />
+      <workItem from="1573513858056" duration="21718000" />
     </task>
     <servers />
   </component>
