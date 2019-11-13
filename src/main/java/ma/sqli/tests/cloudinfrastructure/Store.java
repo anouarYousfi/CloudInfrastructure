@@ -34,4 +34,8 @@ public class Store {
             storeInformations.append(files.stream().map(File::toString).collect(Collectors.joining(", ")));
         return storeInformations.toString();
     }
+
+    public double getUsedDiskSpace() {
+       return this.getFiles().size() * 0.1;
+    }
 }

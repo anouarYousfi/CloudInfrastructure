@@ -115,9 +115,9 @@ public class CloudInfrastructureTest {
     *//**
      * For every VM, we can check the used Disk and memory. The memory is consumed only when a
      * machine is running. The disk size is always used, even if the VM is not running.
-     *//*
+     */
     @Test
-    public void can_check_used_disk_and_ram_per_machine() {
+    public void can_check_used_disk_and_ram_per_machine() throws MachineStateException {
         cloud.createMachine("machine1", "Linux", "50gb", "8gb");
         assertEquals("machine1:inactive", cloud.listMachines());
 
@@ -134,16 +134,16 @@ public class CloudInfrastructureTest {
         // The memory will be released as the machine has been stopped
         assertEquals(0, cloud.usedMemory("machine1"), PRECISION);
     }
-
+/*
     *//**
      * Same as VMs, we can check the used disk in a storage. A storage does not consume any memory,
      * only disk space.
      *
      * To simplify the exercise, we will suppose that all documents have one size = 100mb = 0.100gb.
      * The disk used by a store is the sum of the sizes of all documents inside.
-     *//*
+     */
     @Test
-    public void can_check_used_disk_per_store() {
+    public void can_check_used_disk_per_store() throws CreateStoreException {
         cloud.createStore("myImages");
         cloud.uploadDocument("myImages", "picture.jpeg");
         assertEquals("myImages:picture.jpeg", cloud.listStores());
@@ -158,13 +158,14 @@ public class CloudInfrastructureTest {
         assertEquals(0.200, cloud.usedDisk("myImages"), PRECISION);
     }
 
-    */
+
     /**
      * In this test, we can check the used disk and used memory of all machines and stores existing
      * in the cloud.
-     *//*
+     */
+
     @Test
-    public void can_check_aggregated_data_for_all_machines_and_stores() {
+    public void can_check_aggregated_data_for_all_machines_and_stores() throws CreateStoreException, MachineStateException {
         cloud.createMachine("machine1", "Linux", "50gb", "8gb");
         cloud.createMachine("machine2", "Windows", "20gb", "4gb");
         assertEquals("machine1:inactive||machine2:inactive", cloud.listMachines());
@@ -196,8 +197,10 @@ public class CloudInfrastructureTest {
         cloud.emptyStore("myImages");
         assertEquals(70, cloud.globalUsedDisk(), PRECISION);
         assertEquals(4, cloud.globalUsedMemory(), PRECISION);
-    }*/
+    }
 
     // Used only to compare double, you can totally ignored it
     private static final double PRECISION = 0.00001;
+
+
 }

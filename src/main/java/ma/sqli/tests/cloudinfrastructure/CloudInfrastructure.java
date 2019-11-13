@@ -1,6 +1,8 @@
 package ma.sqli.tests.cloudinfrastructure;
 
 
+import ma.sqli.tests.cloudinfrastructure.machinestates.RunningState;
+
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
@@ -50,7 +52,7 @@ public class CloudInfrastructure {
     }
 
     public void startMachine(String machineName) throws MachineStateException {
-       machines.get(machineName).getMachineState().run(machines.get(machineName));
+        machines.get(machineName).getMachineState().run(machines.get(machineName));
 
     }
 
@@ -59,6 +61,38 @@ public class CloudInfrastructure {
     }
 
     public String listMachines() {
-      return machines.values().stream().map(Machine::toString).collect(Collectors.joining("||"));
+        return machines.values().stream().map(Machine::toString).collect(Collectors.joining("||"));
+    }
+
+    public double usedMemory(String machineName) {
+        Machine machine = machines.get(machineName);
+
+        if (machine.getMachineState() instanceof RunningState)
+            return machine.getMemory();
+        else
+            return 0;
+
+    }
+
+    public double usedDisk(String machineOrStoreName) {
+        Machine machine = machines.get(machineOrStoreName);
+        Store store = stores.get(machineOrStoreName);
+        if (machine != null) {
+            return machine.getDiskSize();
+        } else {
+            return store.getUsedDiskSpace();
+
+        }
+    }
+
+    public double globalUsedDisk() {
+        double diskSpaceUsedByStores = stores.values().stream().mapToDouble(Store::getUsedDiskSpace).sum();
+        double diskSpaceUsedBymachines = machines.values().stream().mapToDouble(Machine::getDiskSize).sum();
+        return diskSpaceUsedBymachines + diskSpaceUsedByStores;
+    }
+
+    public double globalUsedMemory() {
+        return machines.values().stream().mapToDouble(e->usedMemory(e.getName())).sum();
+
     }
 }

@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d2c142b-2e9d-440f-8bb2-1b2dac89e388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/MachineState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/machinestates/InactiveState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/machinestates/RunningState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/machinestates/StoppedState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/MachineStateException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/CloudInfrastructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/CloudInfrastructure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/Machine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/Machine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/test/ma/sqli/tests/cloudinfrastructure/CloudInfrastructureTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/ma/sqli/tests/cloudinfrastructure/CloudInfrastructureTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/CloudInfrastructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/CloudInfrastructure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/Machine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/MachineState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/MachineState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/InactiveState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/InactiveState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/RunningState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/RunningState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/StoppedState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/machinestates/StoppedState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ma/sqli/tests/cloudinfrastructure/CloudInfrastructureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ma/sqli/tests/cloudinfrastructure/CloudInfrastructureTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="9d2c142b-2e9d-440f-8bb2-1b2dac89e388" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +11,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TTThXbDb4IOxhFktifixb8VTka" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -97,22 +76,11 @@
       <option name="presentableId" value="Default" />
       <updated>1573483204932</updated>
       <workItem from="1573483208809" duration="2068000" />
-      <workItem from="1573513858056" duration="22169000" />
+      <workItem from="1573513858056" duration="17035000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

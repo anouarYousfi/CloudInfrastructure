@@ -6,6 +6,10 @@ import ma.sqli.tests.cloudinfrastructure.machinestates.StoppedState;
 
 
 public class Machine {
+    public String getName() {
+        return name;
+    }
+
     private String name;
     private String operatingSystem;
     private String diskSize;
@@ -42,5 +46,14 @@ public class Machine {
       else
           storeInformations.append("inactive");
         return storeInformations.toString();
+    }
+
+    public double getMemory() {
+       return Double.parseDouble(memory.replaceAll("[\\D]", ""));
+    }
+
+    public double getDiskSize() {
+        return Double.parseDouble(diskSize.replaceAll("[\\D]", ""));
+
     }
 }
