@@ -4,7 +4,6 @@ import ma.sqli.tests.cloudinfrastructure.machinestates.InactiveState;
 import ma.sqli.tests.cloudinfrastructure.machinestates.RunningState;
 import ma.sqli.tests.cloudinfrastructure.machinestates.StoppedState;
 
-import java.util.stream.Collectors;
 
 public class Machine {
     private String name;

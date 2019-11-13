@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d2c142b-2e9d-440f-8bb2-1b2dac89e388" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/MachineState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/machinestates/InactiveState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/machinestates/RunningState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/machinestates/StoppedState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/sqli/tests/cloudinfrastructure/MachineStateException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/CloudInfrastructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/CloudInfrastructure.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/Machine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/ma/sqli/tests/cloudinfrastructure/Machine.class" afterDir="false" />
@@ -23,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573483204932</updated>
       <workItem from="1573483208809" duration="2068000" />
-      <workItem from="1573513858056" duration="21718000" />
+      <workItem from="1573513858056" duration="22169000" />
     </task>
     <servers />
   </component>

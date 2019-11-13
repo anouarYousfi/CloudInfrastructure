@@ -83,7 +83,7 @@ public class CloudInfrastructureTest {
      * VM is always Inactive at its creation. We can then start or stop it.
      */
    @Test
-    public void create_machines() {
+    public void create_machines() throws MachineStateException {
         // create a new machine takes 4 parameters : name, operating system, disk size, memory.
         cloud.createMachine("machine1", "Linux", "50gb", "8gb");
         cloud.createMachine("machine2", "Windows", "20gb", "4gb");
@@ -102,16 +102,16 @@ public class CloudInfrastructureTest {
 /*
     *//**
      * Trying to start an already running VM will throw a MachineStateException
-     *//*
+     */
     @Test(expected = MachineStateException.class)
-    public void cannot_launch_already_started_machine() {
+    public void cannot_launch_already_started_machine() throws MachineStateException {
         cloud.createMachine("machine1", "Linux", "50gb", "8gb");
         cloud.startMachine("machine1");
         assertEquals("machine1:running", cloud.listMachines());
 
         cloud.startMachine("machine1"); // will throw the exception
     }
-
+/*
     *//**
      * For every VM, we can check the used Disk and memory. The memory is consumed only when a
      * machine is running. The disk size is always used, even if the VM is not running.

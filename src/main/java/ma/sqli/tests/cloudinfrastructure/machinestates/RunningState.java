@@ -2,6 +2,7 @@ package ma.sqli.tests.cloudinfrastructure.machinestates;
 
 import ma.sqli.tests.cloudinfrastructure.Machine;
 import ma.sqli.tests.cloudinfrastructure.MachineState;
+import ma.sqli.tests.cloudinfrastructure.MachineStateException;
 
 public class RunningState   implements MachineState {
 
@@ -12,7 +13,7 @@ public class RunningState   implements MachineState {
     }
 
     @Override
-    public void run(Machine machine) {
-
+    public void run(Machine machine) throws MachineStateException {
+     throw new MachineStateException("already running");
     }
 }

@@ -49,7 +49,7 @@ public class CloudInfrastructure {
         machines.put(machineName, new Machine(machineName, operatingSystem, diskSize, memory));
     }
 
-    public void startMachine(String machineName) {
+    public void startMachine(String machineName) throws MachineStateException {
        machines.get(machineName).getMachineState().run(machines.get(machineName));
 
     }
